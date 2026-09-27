@@ -1,0 +1,17 @@
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+CONNECTED DEVICES []
+PASS absent device label
+PASS absent device diagram dimmed
+PASS empty mapping
+PASS button mapping
+PASS axis mapping a2
+PASS inverted mapping a2
+PASS axis mapping +a2
+PASS inverted mapping +a2
+PASS axis mapping -a2
+PASS inverted mapping -a2
+PASS mapping serialization
+PASS empty mapping omitted
+PASS macOS platform tag
+RESULT 13 checks, 0 failures; no hardware input or mapping applied

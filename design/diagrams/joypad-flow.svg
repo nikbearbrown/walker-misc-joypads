@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="800" viewBox="0 0 1400 800" role="img" aria-labelledby="t d">
+<title id="t">Tool and remap-wizard flow · M-01..M-07, S-02</title>
+<desc id="d">Recovered from joypads.gd and remap/remap_wizard.gd. Walker has only ever observed the NO DEVICE branch. IDs: M-01, M-02, M-03, M-04, M-05, M-06, M-07, S-02.</desc>
+<rect width="1400" height="800" fill="#faf9f5"/>
+<defs>
+<marker id="a" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#25354a"/></marker>
+<marker id="p" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#2f9e44"/></marker>
+</defs>
+<g font-family="Helvetica, Arial, sans-serif" fill="#25354a">
+<text x="40" y="50" font-size="28" font-weight="700">Tool and remap-wizard flow · M-01..M-07, S-02</text>
+<text x="40" y="78" font-size="15" fill="#5b6b7c">Recovered from joypads.gd and remap/remap_wizard.gd. Walker has only ever observed the NO DEVICE branch.</text>
+<text x="40" y="776" font-size="14" fill="#5b6b7c">solid = observed in code · dashed = proposed / unverified · IDs: M-01, M-02, M-03, M-04, M-05, M-06, M-07, S-02</text>
+<path d="M390 200 L530 200" stroke="#2f9e44" stroke-width="2" fill="none" stroke-dasharray="9 7" marker-end="url(#p)"/>
+<rect x="409" y="214" width="102" height="16" fill="#faf9f5" opacity="0.92"/>
+<text x="460" y="226" font-size="13" text-anchor="middle" fill="#2f9e44">pad connects /</text>
+<rect x="422" y="230" width="76" height="16" fill="#faf9f5" opacity="0.92"/>
+<text x="460" y="242" font-size="13" text-anchor="middle" fill="#2f9e44">ID changed</text>
+<path d="M870 172 L1040 143" stroke="#2f9e44" stroke-width="2" fill="none" stroke-dasharray="9 7" marker-end="url(#p)"/>
+<rect x="900" y="142" width="109" height="16" fill="#faf9f5" opacity="0.92"/>
+<text x="955" y="154" font-size="13" text-anchor="middle" fill="#2f9e44">Start Vibration</text>
+<path d="M870 228 L1030 255" stroke="#25354a" stroke-width="2" fill="none" marker-end="url(#a)"/>
+<rect x="925" y="226" width="50" height="16" fill="#faf9f5" opacity="0.92"/>
+<text x="950" y="238" font-size="13" text-anchor="middle" fill="#5b6b7c">button</text>
+<path d="M700 245 L700 395" stroke="#25354a" stroke-width="2" fill="none" marker-end="url(#a)"/>
+<rect x="678" y="304" width="43" height="16" fill="#faf9f5" opacity="0.92"/>
+<text x="700" y="316" font-size="13" text-anchor="middle" fill="#5b6b7c">Remap</text>
+<path d="M220 245 L220 400" stroke="#25354a" stroke-width="2" fill="none" marker-end="url(#a)"/>
+<rect x="198" y="306" width="43" height="16" fill="#faf9f5" opacity="0.92"/>
+<text x="220" y="318" font-size="13" text-anchor="middle" fill="#5b6b7c">Remap</text>
+<path d="M880 440 L1020 440" stroke="#25354a" stroke-width="2" fill="none" marker-end="url(#a)"/>
+<rect x="896" y="424" width="109" height="16" fill="#faf9f5" opacity="0.92"/>
+<text x="950" y="436" font-size="13" text-anchor="middle" fill="#5b6b7c">after last step</text>
+<path d="M700 485 L700 620" stroke="#2f9e44" stroke-width="2" fill="none" stroke-dasharray="9 7" marker-end="url(#p)"/>
+<rect x="655" y="536" width="89" height="16" fill="#faf9f5" opacity="0.92"/>
+<text x="700" y="548" font-size="13" text-anchor="middle" fill="#2f9e44">close button</text>
+<rect x="50" y="155" width="340" height="90" rx="12" fill="#ffffff" stroke="#25354a" stroke-width="3"/>
+<text x="220" y="190" font-size="19" font-weight="700" text-anchor="middle" fill="#25354a">NO DEVICE</text>
+<text x="220" y="212" font-size="13" text-anchor="middle" fill="#5b6b7c">&quot;No controller detected at ID n&quot;</text>
+<text x="220" y="228" font-size="13" text-anchor="middle" fill="#5b6b7c">UI dimmed to 50% (observed)</text>
+<rect x="530" y="155" width="340" height="90" rx="12" fill="#fffdf7" stroke="#2f9e44" stroke-width="2.2" stroke-dasharray="9 7"/>
+<text x="700" y="190" font-size="19" font-weight="700" text-anchor="middle" fill="#2f9e44">LIVE READOUT</text>
+<text x="700" y="212" font-size="13" text-anchor="middle" fill="#5b6b7c">10 axes · 21 buttons · diagram</text>
+<text x="700" y="228" font-size="13" text-anchor="middle" fill="#5b6b7c">deadzone 0.2 (never observed)</text>
+<rect x="1040" y="85" width="280" height="70" rx="12" fill="#fffdf7" stroke="#2f9e44" stroke-width="2.2" stroke-dasharray="9 7"/>
+<text x="1180" y="118" font-size="19" font-weight="700" text-anchor="middle" fill="#2f9e44">VIBRATION</text>
+<text x="1180" y="140" font-size="13" text-anchor="middle" fill="#5b6b7c">weak · strong · duration</text>
+<rect x="520" y="395" width="360" height="90" rx="12" fill="#fffdf7" stroke="#25354a" stroke-width="2.2"/>
+<text x="700" y="430" font-size="19" font-weight="700" text-anchor="middle" fill="#25354a">WIZARD</text>
+<text x="700" y="452" font-size="13" text-anchor="middle" fill="#5b6b7c">20 steps from JoyMapping.BASE</text>
+<text x="700" y="468" font-size="13" text-anchor="middle" fill="#5b6b7c">Prev · Skip · Next · deadzone 0.3</text>
+<rect x="1020" y="395" width="320" height="90" rx="12" fill="#fffdf7" stroke="#25354a" stroke-width="2.2"/>
+<text x="1180" y="430" font-size="19" font-weight="700" text-anchor="middle" fill="#25354a">MAPPING APPLIED</text>
+<text x="1180" y="452" font-size="13" text-anchor="middle" fill="#5b6b7c">GUID,name,a:b0,...,platform:X</text>
+<text x="1180" y="468" font-size="13" text-anchor="middle" fill="#5b6b7c">add_joy_mapping · MapWindow</text>
+<rect x="1030" y="240" width="300" height="80" rx="12" fill="#fffdf7" stroke="#25354a" stroke-width="2.2"/>
+<text x="1180" y="270" font-size="19" font-weight="700" text-anchor="middle" fill="#25354a">&quot;SET RAW MAPPING&quot;</text>
+<text x="1180" y="292" font-size="13" text-anchor="middle" fill="#5b6b7c">actually removes mapping</text>
+<text x="1180" y="308" font-size="13" text-anchor="middle" fill="#5b6b7c">joypads.gd:127 · Q-05</text>
+<rect x="530" y="620" width="340" height="80" rx="12" fill="#fffdf7" stroke="#2f9e44" stroke-width="2.2" stroke-dasharray="9 7"/>
+<text x="700" y="650" font-size="19" font-weight="700" text-anchor="middle" fill="#2f9e44">CLOSED MID-WIZARD</text>
+<text x="700" y="672" font-size="13" text-anchor="middle" fill="#5b6b7c">hide without reset()</text>
+<text x="700" y="688" font-size="13" text-anchor="middle" fill="#5b6b7c">cur_step stays set? · Q-07</text>
+<rect x="60" y="400" width="320" height="80" rx="12" fill="#fffdf7" stroke="#25354a" stroke-width="2.2"/>
+<text x="220" y="438" font-size="19" font-weight="700" text-anchor="middle" fill="#25354a">&quot;Unable to find controller&quot;</text>
+<text x="220" y="460" font-size="13" text-anchor="middle" fill="#5b6b7c">start() with empty GUID</text>
+</g></svg>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<title>Joypads — recovered GDD deck</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<style>
+:root{--bg:#faf9f5;--ink:#25354a;--muted:#5b6b7c;--acc:#2f9e44;--card:#fffdf7;--rule:#daddd6;color-scheme:light}
+html,body{margin:0;background:var(--bg);color:var(--ink);font-family:Helvetica,Arial,sans-serif}
+.slide{display:none;min-height:100vh;box-sizing:border-box;padding:56px 72px;max-width:1400px;margin:0 auto}
+.slide.on{display:block}
+h1{font-size:44px;margin:0 0 8px}h2{font-size:34px;margin:0 0 14px}
+.kicker{color:var(--muted);font-size:16px;letter-spacing:.04em;text-transform:uppercase;margin-bottom:18px}
+p,li{font-size:22px;line-height:1.4}li{margin:8px 0}
+.cap{color:var(--muted);font-size:15px;margin-top:6px}
+img{max-width:100%;max-height:62vh;border:1px solid var(--rule);background:#fff}
+.tag{display:inline-block;padding:2px 8px;border-radius:4px;font-size:14px;font-weight:700;margin-right:6px}
+.obs{background:#e3f1ec;color:#287c68}.inf{background:#eef1f4;color:var(--muted)}.mis{background:#fdece9;color:#b3402f}
+.prop{border:2px dashed var(--acc);color:var(--acc);background:transparent}
+table{border-collapse:collapse;font-size:18px;width:100%}td,th{border-bottom:1px solid var(--rule);padding:8px 10px;text-align:left;vertical-align:top}
+.big{font-size:96px;font-weight:700;color:var(--acc);line-height:1}
+.dash{border:2px dashed var(--acc);padding:14px 18px;border-radius:10px}
+.solid{border:2px solid var(--ink);padding:14px 18px;border-radius:10px}
+nav{position:fixed;bottom:14px;right:22px;color:var(--muted);font-size:14px}
+.zelda{border-left:6px solid var(--acc);padding-left:18px}
+a{color:var(--ink)}
+@media(max-width:800px){.slide{padding:24px 16px}h1{font-size:30px}h2{font-size:24px}p,li{font-size:17px}.big{font-size:56px}}
+</style></head><body>
+<!-- walker-misc-joypads DECK · /gdd reverse silent · 2026-09-27 · gate — unsigned at time of writing -->
+<section class="slide on">
+<div class="kicker">walker-misc-joypads · recovered GDD 0.1.0 · 2026-09-27 · Zelda, silent · gate — unsigned at time of writing</div>
+<h1>Press a button, see its number.</h1>
+<p>Godot's <code>misc/joypads</code> tool in Walker: live axes and buttons for one device ID, vibration, and a wizard that writes a controller mapping string.</p><p><span class='tag obs'>OBSERVED</span> &nbsp;<span class='tag inf'>INFERRED</span> &nbsp;<span class='tag mis'>MISSING</span> &nbsp;<span class='tag prop'>PROPOSED</span></p><p class='cap'>A tool, not a game. No gate signed. → <a href='GDD.md'>GDD.md</a></p>
+</section>
+<section class="slide">
+<div class="kicker">What exists · evidence</div>
+<h2>Upstream's picture, Walker's empty port</h2>
+<img src='../godot/screenshots/joypads.webp' alt='Upstream screenshot of the joypads tool'><p class='cap'><span class='tag obs'>OBSERVED</span> godot/screenshots/joypads.webp, shipped upstream, not a Walker capture. Walker ran with <b>CONNECTED DEVICES []</b> (mapping-20260927.log:3).</p>
+</section>
+<section class="slide">
+<div class="kicker">Vision · GDD §1</div>
+<h2>Upstream knows what it is; Walker has not said</h2>
+<div class='solid'><p>“A tool for testing joypad input ... and generating controller mapping strings.” <span class='tag obs'>project.godot:14, README.md:3-5</span></p></div><br><div class='dash'><p>Why Walker keeps it, and for whom. <span class='tag mis'>MISSING</span> Q-01, Q-02</p></div>
+</section>
+<section class="slide">
+<div class="kicker">Flow · GDD §3, §5</div>
+<h2>Readout, wizard, string</h2>
+<img src='diagrams/joypad-flow.svg' alt='Joypad flow'><p class='cap'>Only NO DEVICE has ever been observed.</p>
+</section>
+<section class="slide">
+<div class="kicker">Finding · GDD §5 M-06</div>
+<h2>The button that says the opposite</h2>
+<p><b>“Set Raw Mapping”</b> <span class='tag obs'>joypads.tscn:658</span> calls <code>Input.remove_joy_mapping(guid)</code> <span class='tag obs'>joypads.gd:127</span>.</p><p>The effect is raw indices; the action is a removal. Keep, relabel, or explain? Q-05.</p>
+</section>
+<section class="slide">
+<div class="kicker">Verification · GDD §11</div>
+<h2>Two features at L2, six at L1</h2>
+<img src='diagrams/verification-map.svg' alt='Verification map'>
+</section>
+<section class="slide">
+<div class="kicker">Risks · GDD §14</div>
+<h2>Top three</h2>
+<ol><li><b>R-01</b> constructed mapping objects mistaken for controller verification.</li><li><b>R-05</b> both films need a controller on camera; none is available.</li><li><b>R-02</b> the “Set Raw Mapping” label.</li></ol>
+</section>
+<section class="slide">
+<div class="kicker">Open questions · decisions.md</div>
+<h2>Nine open, zero decided</h2>
+<ul><li>Q-01 purpose in Walker</li><li>Q-05 the label</li><li>Q-06 whose controller, which OS</li><li>Q-07 wizard close state</li></ul><p class='cap'><a href='decisions.md'>decisions.md</a></p>
+</section>
+<section class="slide">
+<div class="kicker">Zelda</div>
+<h2>Fix first: book a controller</h2>
+<p class='zelda'>Nothing past L2 and neither film can happen until someone names a pad and an afternoon. That is Q-06.</p>
+</section>
+
+<nav id="n"></nav>
+<script>
+var s=[].slice.call(document.querySelectorAll('.slide')),i=0,n=document.getElementById('n');
+function go(k){s[i].classList.remove('on');i=Math.max(0,Math.min(s.length-1,k));s[i].classList.add('on');n.textContent=(i+1)+' / '+s.length;}
+document.addEventListener('keydown',function(e){if(['ArrowRight','ArrowDown',' ','PageDown'].indexOf(e.key)>=0){e.preventDefault();go(i+1);}if(['ArrowLeft','ArrowUp','PageUp'].indexOf(e.key)>=0){e.preventDefault();go(i-1);}if(e.key==='Home')go(0);if(e.key==='End')go(s.length-1);});
+document.addEventListener('click',function(e){if(e.target.closest('a'))return;go(e.clientX>innerWidth/2?i+1:i-1);});
+go(0);
+</script>
+
+</body></html>

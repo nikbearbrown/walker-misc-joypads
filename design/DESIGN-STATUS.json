@@ -1,0 +1,46 @@
+{
+  "game": "walker-misc-joypads",
+  "mode": "recovered",
+  "revision": 1,
+  "design_version": "0.1.0-recovered",
+  "date": "2026-09-27",
+  "recovered_from": {
+    "path": "walker-misc-joypads/godot",
+    "upstream": "godotengine/godot-demo-projects misc/joypads @ a3b5c113112f77291d5f3d1360f33a882fdc52f7",
+    "engine_detected": "Godot 4.7.2 (features 4.7), Compatibility renderer",
+    "pass": "reverse, silent"
+  },
+  "project_kind": "input-testing tool and mapping-string generator (not a game)",
+  "engine": {
+    "name": "godot",
+    "version": "4.7.2.stable",
+    "renderer": "gl_compatibility"
+  },
+  "gates": {
+    "vision": {
+      "signed_by": null,
+      "date": null,
+      "revision": null
+    },
+    "systems": {
+      "signed_by": null,
+      "date": null,
+      "revision": null
+    },
+    "world": {
+      "signed_by": null,
+      "date": null,
+      "revision": null
+    },
+    "scope": {
+      "signed_by": null,
+      "date": null,
+      "revision": null
+    }
+  },
+  "missing_count": 8,
+  "open_questions": 9,
+  "edu_track": false,
+  "human_playtests": 0,
+  "notes": "Silent recovered pass. gate — unsigned at time of writing. A recovered GDD describes what exists; it approves nothing. Gates are signed by humans only."
+}

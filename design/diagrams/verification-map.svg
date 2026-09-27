@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="660" viewBox="0 0 1400 660" role="img" aria-labelledby="t d">
+<title id="t">What Walker has verified · F-01..F-08</title>
+<desc id="d">Only the absent-device state and the mapping-string model are L2. Dashed = needs a physical controller (T-21..T-23) or is untested (T-20). IDs: F-01, F-02, F-03, F-04, F-05, F-06, T-20, T-21, T-22, T-23.</desc>
+<rect width="1400" height="660" fill="#faf9f5"/>
+<defs>
+<marker id="a" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#25354a"/></marker>
+<marker id="p" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#2f9e44"/></marker>
+</defs>
+<g font-family="Helvetica, Arial, sans-serif" fill="#25354a">
+<text x="40" y="50" font-size="28" font-weight="700">What Walker has verified · F-01..F-08</text>
+<text x="40" y="78" font-size="15" fill="#5b6b7c">Only the absent-device state and the mapping-string model are L2. Dashed = needs a physical controller (T-21..T-23) or is untested (T-20).</text>
+<text x="40" y="636" font-size="14" fill="#5b6b7c">solid = observed in code · dashed = proposed / unverified · IDs: F-01, F-02, F-03, F-04, F-05, F-06, T-20, T-21, T-22, T-23</text>
+<path d="M420 213 L1010 187" stroke="#2f9e44" stroke-width="2" fill="none" stroke-dasharray="9 7" marker-end="url(#p)"/>
+<path d="M420 240 L1010 312" stroke="#2f9e44" stroke-width="2" fill="none" stroke-dasharray="9 7" marker-end="url(#p)"/>
+<path d="M430 420 L600 420" stroke="#2f9e44" stroke-width="2" fill="none" stroke-dasharray="9 7" marker-end="url(#p)"/>
+<path d="M920 444 L1010 458" stroke="#2f9e44" stroke-width="2" fill="none" stroke-dasharray="9 7" marker-end="url(#p)"/>
+<rect x="100" y="180" width="320" height="80" rx="12" fill="#fffdf7" stroke="#25354a" stroke-width="2.2"/>
+<text x="260" y="218" font-size="19" font-weight="700" text-anchor="middle" fill="#25354a">F-01 absent device</text>
+<text x="260" y="240" font-size="13" text-anchor="middle" fill="#5b6b7c">L2 · 2 checks</text>
+<rect x="90" y="380" width="340" height="80" rx="12" fill="#fffdf7" stroke="#25354a" stroke-width="2.2"/>
+<text x="260" y="418" font-size="19" font-weight="700" text-anchor="middle" fill="#25354a">F-06 mapping tokens</text>
+<text x="260" y="440" font-size="13" text-anchor="middle" fill="#5b6b7c">L2 · 11 checks, constructed objects</text>
+<rect x="600" y="380" width="320" height="80" rx="12" fill="#fffdf7" stroke="#2f9e44" stroke-width="2.2" stroke-dasharray="9 7"/>
+<text x="760" y="418" font-size="19" font-weight="700" text-anchor="middle" fill="#2f9e44">T-20 wizard close state</text>
+<text x="760" y="440" font-size="13" text-anchor="middle" fill="#5b6b7c">not written</text>
+<rect x="1010" y="140" width="300" height="80" rx="12" fill="#fffdf7" stroke="#2f9e44" stroke-width="2.2" stroke-dasharray="9 7"/>
+<text x="1160" y="178" font-size="19" font-weight="700" text-anchor="middle" fill="#2f9e44">T-21 buttons and axes</text>
+<text x="1160" y="200" font-size="13" text-anchor="middle" fill="#5b6b7c">physical pad</text>
+<rect x="1010" y="290" width="300" height="80" rx="12" fill="#fffdf7" stroke="#2f9e44" stroke-width="2.2" stroke-dasharray="9 7"/>
+<text x="1160" y="328" font-size="19" font-weight="700" text-anchor="middle" fill="#2f9e44">T-22 vibration</text>
+<text x="1160" y="350" font-size="13" text-anchor="middle" fill="#5b6b7c">physical pad</text>
+<rect x="1010" y="440" width="300" height="80" rx="12" fill="#fffdf7" stroke="#2f9e44" stroke-width="2.2" stroke-dasharray="9 7"/>
+<text x="1160" y="478" font-size="19" font-weight="700" text-anchor="middle" fill="#2f9e44">T-23 wizard end to end</text>
+<text x="1160" y="500" font-size="13" text-anchor="middle" fill="#5b6b7c">physical pad</text>
+</g></svg>
